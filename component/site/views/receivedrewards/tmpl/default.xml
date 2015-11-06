@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="com_dogecointipping_receivedrewards_view_title">
+		<message>
+			<![CDATA[com_dogecointipping_receivedrewards_view_desc]]>
+		</message>
+	</layout>
+</metadata>

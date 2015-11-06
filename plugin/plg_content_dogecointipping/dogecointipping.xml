@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.1" group="content" method="upgrade">
+    <name>plg_content_dogecointipping</name>
+    <version>1.0.0</version>
+    <creationDate>2015-11-04</creationDate>
+    <license>http://www.gnu.org/licenses/gpl</license>
+    <copyright>Copyright 2015 joomla.cn. All rights reserved.</copyright>
+    <author>joomla.cn</author>
+    <authorUrl>http://joomla.cn</authorUrl>
+    <description>PLG_CONTENT_DOGECOINTIPPING_XML_DESCRIPTION</description>
+    <files>
+    	<folder>assets</folder>
+    	<folder>language</folder>
+    	<folder>libs</folder>
+        <filename plugin="dogecointipping">dogecointipping.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+        	<fieldset name="basic">
+				<field
+					name="cat_type"
+					type="list"
+					default="all"
+					label="PLG_CONTENT_DOGECOINTIPPING_FIELD_ENABLE_FOR_CATEGORIES_LABEL"
+					description="PLG_CONTENT_FIELD_ENABLE_FOR_CATEGORIES_DESC">
+					<option value="all">PLG_CONTENT_DOGECOINTIPPING_VALUE_ENABLE_FOR_ALL_CATEGORIES</option>
+					<option value="follow_cate">PLG_CONTENT_DOGECOINTIPPING_VALUE_ENABLE_FOR_FOLLOWING_CATEGORIES_ONLY</option>
+					<option value="except_cate">PLG_CONTENT_DOGECOINTIPPING_VALUE_ENABLE_FOR_ALL_CATEGORIES_EXCEPT_FOLLOWING</option>
+				</field>
+				<field
+					name="cats"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					size="20"
+					default=""
+					label="PLG_CONTENT_DOGECOINTIPPING_FIELD_CATEGORIES_OF_ARTICLES_LABEL"
+					description="PLG_CONTENT_DOGECOINTIPPING_FIELD_CATEGORIES_OF_ARTICLES_DESC" />
+        	</fieldset>
+        </fields>
+    </config>
+</extension>

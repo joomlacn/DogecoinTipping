@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<fieldset name="component"
+		label="COM_DOGECOINTIPPING_COMPONENT_LABEL"
+		description="COM_DOGECOINTIPPING_COMPONENT_DESC"
+	>
+		<field name="api_key"
+			type="text"
+			label="COM_DOGECOINTIPPING_FIELD_API_KEY"
+			description="COM_DOGECOINTIPPING_FIELD_API_KEY_DESC"
+			required="true"
+		/>
+		<field name="secret_pin"
+			type="text"
+			label="COM_DOGECOINTIPPING_FIELD_SECRET_PIN"
+			description="COM_DOGECOINTIPPING_FIELD_SECRET_PIN_DESC"
+			required="true"
+		/>
+		<field name="withdraw_address"
+			type="text"
+			label="COM_DOGECOINTIPPING_FIELD_WITHDRAW_ADDRESS"
+			description="COM_DOGECOINTIPPING_FIELD_WITHDRAW_ADDRESS_DESC"
+			required="true"
+			class="span4"
+		/>
+	</fieldset>
+	<fieldset name="Email"
+		label="COM_DOGECOINTIPPING_EMAIL_LABEL"
+		description="COM_DOGECOINTIPPING_EMAIL_DESC"
+		>
+		<field name="email_title"
+			type="text"
+			label="COM_DOGECOINTIPPING_FIELD_EMAIL_TITLE"
+			description="COM_DOGECOINTIPPING_FIELD_EMAIL_TITLE_DESC"
+			default="您收到了新的打赏"
+			required="true"
+		/>
+		<field name="email_template"
+			type="editor"
+			label="COM_DOGECOINTIPPING_FIELD_EMAIL_TEMPLATE"
+			description="COM_DOGECOINTIPPING_FIELD_EMAIL_TEMPLATE_DESC"
+			filter="raw"
+			default="您好：&lt;br&gt;您的文章{article}，收到了来自{from_user}，发出的{amount}DOGE打赏。"
+		/>
+	</fieldset>
+	<fieldset name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+		<field name="rules" type="rules"
+			component="com_dogecointipping"
+			filter="rules"
+			validate="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			section="component" />
+	</fieldset>
+</config>

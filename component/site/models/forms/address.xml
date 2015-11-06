@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>		
+		<field
+			name="label"
+			type="text"
+			size="80"
+			label="COM_DOGECOINTIPPING_ADDRESS_FIELD_LABEL_LABEL"
+			description="COM_DOGECOINTIPPING_ADDRESS_FIELD_LABEL_DESC"
+			class="form-control"
+			labelclass="control-label col-sm-2"
+			filter="raw"
+		/>
+	</fieldset>
+</form>

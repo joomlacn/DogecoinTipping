@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset>
+		<field
+			name="amounts"
+			type="text"
+			size="80"
+			label="COM_DOGECOINTIPPING_WITHDRAW_FIELD_AMOUNTS_LABEL"
+			description="COM_DOGECOINTIPPING_WITHDRAW_FIELD_AMOUNTS_DESC"
+			class="form-control"
+			labelclass="control-label col-sm-2"
+			filter="raw"
+			required="true"
+		/>
+		<field
+			name="to_addresses"
+			type="text"
+			size="80"
+			label="COM_DOGECOINTIPPING_WITHDRAW_FIELD_TO_ADDRESSES_LABEL"
+			description="COM_DOGECOINTIPPING_WITHDRAW_FIELD_TO_ADDRESSES_DESC"
+			class="form-control"
+			labelclass="control-label col-sm-2"
+			filter="raw"
+			required="true"
+		/>
+	</fieldset>
+</form>
