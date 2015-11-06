@@ -5,5 +5,8 @@
 
 　　开发：[joomla.cn][2]
 
+　　使用文档: [http://joomlacn.github.io/DogecoinTipping-Doc][3]
+
 [1]:http://www.gnu.org/licenses/gpl-2.0.html
 [2]:http://www.joomla.cn
+[3]:http://joomlacn.github.io/DogecoinTipping-Doc
